@@ -1,0 +1,9 @@
+hlrt {
+    begin: "<html>"
+    end: "</html>"
+    data: {
+        "job_title": r"<h2\s+class=\"job-title[^>]*\">.*?<a.*?>(.*?)</a>",
+        "company_name": r"<div\s+class=\"info-container[^>]*\">.*?<span\s+class=\"job-company\">(.*?)</span>",
+        "location": r"<div\s+class=\"info-container[^>]*\">.*?<a\s+class=\"job-location[^>]*\">(.*?)</a>"
+    }
+}
